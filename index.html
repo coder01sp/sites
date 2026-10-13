@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder01 | Desenvolvedor Full-Stack</title>
+    <meta name="description" content="Coder01 - Desenvolvedor Full-Stack apaixonado por criar experiências digitais incríveis. Sites modernos, responsivos e de alta performance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Coder01</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Início</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projetos</a></li>
+                    <li class="nav__item"><a href="#process" class="nav__link">Processo</a></li>
+                    <li class="nav__item"><a href="#testimonials" class="nav__link">Depoimentos</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+                </ul>
+                <button class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="nav__actions">
+                <a href="https://api.whatsapp.com/send/?phone=5511948753746" target="_blank" rel="noopener noreferrer" class="nav__cta">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Contato
+                </a>
+                <button class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== HERO ==================== -->
+        <section class="hero section" id="home">
+            <div class="hero__bg-effects">
+                <div class="hero__glow hero__glow--1"></div>
+                <div class="hero__glow hero__glow--2"></div>
+                <div class="hero__grid-overlay"></div>
+            </div>
+
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <div class="hero__badge">
+                        <span class="hero__badge-dot"></span>
+                        Desenvolvedor de Software
+                    </div>
+
+                    <h1 class="hero__title">
+                        Eu crio <span class="hero__title-gradient">experiências</span><br>
+                        digitais que<br>
+                        <span class="hero__title-gradient">importam.</span>
+                    </h1>
+
+                    <p class="hero__description">
+                        Sou o Coder01, um desenvolvedor full-stack apaixonado por 
+                        transformar ideias em aplicações web escaláveis, bonitas e 
+                        de alta performance.
+                    </p>
+
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary">
+                            Ver Projetos
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=5511948753746" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                            Vamos Conversar
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero__socials">
+                        <a href="#" class="hero__social-link" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class="hero__social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="hero__social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="hero__social-link" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero__image-area">
+                    <div class="hero__image-wrapper">
+                        <div class="hero__image-placeholder">
+                            <img src="assets/hero-profile.jpg" alt="Coder01 - Desenvolvedor Full-Stack" class="hero__photo">
+                        </div>
+                        <div class="hero__code-card">
+                            <span class="hero__code-icon">&lt;/&gt;</span>
+                            <div class="hero__code-lines">
+                                <span>✓ Código Limpo</span>
+                                <span>✓ Soluções Escaláveis</span>
+                                <span>✓ Pixel Perfect</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="hero__stat-card">
+                            <div class="hero__stat-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div class="hero__stat-info">
+                                <span class="hero__stat-number" data-target="4">0</span><span class="hero__stat-plus">+</span>
+                                <span class="hero__stat-label">Anos de Experiência</span>
+                            </div>
+                        </div>
+                        <div class="hero__stat-card">
+                            <div class="hero__stat-icon">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </div>
+                            <div class="hero__stat-info">
+                                <span class="hero__stat-number" data-target="20">0</span><span class="hero__stat-plus">+</span>
+                                <span class="hero__stat-label">Projetos Concluídos</span>
+                            </div>
+                        </div>
+                        <div class="hero__stat-card hero__stat-card--accent">
+                            <span class="hero__stat-number-large" data-target="99">0</span><span class="hero__stat-percent">%</span>
+                            <span class="hero__stat-label">Satisfação do Cliente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT ==================== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__info glass-card">
+                        <h2 class="section__title">Sobre Mim</h2>
+                        <p class="about__text">
+                            Sou um desenvolvedor full-stack com forte foco em construir 
+                            aplicações web modernas, responsivas e intuitivas. Gosto de 
+                            resolver problemas complexos e estou sempre aprendendo novas 
+                            tecnologias para entregar soluções de alto nível.
+                        </p>
+
+                        <div class="about__details">
+                            <div class="about__detail">
+                                <i class="fa-solid fa-user"></i>
+                                <div>
+                                    <span class="about__detail-label">Nome</span>
+                                    <span class="about__detail-value">Coder01</span>
+                                </div>
+                            </div>
+                            <div class="about__detail">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <span class="about__detail-label">Localização</span>
+                                    <span class="about__detail-value">Brasil</span>
+                                </div>
+                            </div>
+                            <div class="about__detail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <span class="about__detail-label">Email</span>
+                                    <span class="about__detail-value">contato@coder01.dev</span>
+                                </div>
+                            </div>
+                            <div class="about__detail">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <span class="about__detail-label">Disponibilidade</span>
+                                    <span class="about__detail-value about__detail-value--green">
+                                        <span class="status-dot"></span>
+                                        Aberto a Projetos
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="btn btn--outline btn--sm">
+                            Mais Sobre Mim
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="about__skills glass-card" id="skills">
+                        <h2 class="section__title">Minhas Habilidades</h2>
+
+                        <div class="skills__list">
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">JavaScript / TypeScript</span>
+                                    <span class="skill__percent">95%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">React / Next.js</span>
+                                    <span class="skill__percent">90%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Node.js / Express</span>
+                                    <span class="skill__percent">85%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">Python / Django</span>
+                                    <span class="skill__percent">75%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">SQL / MongoDB</span>
+                                    <span class="skill__percent">80%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill__header">
+                                    <span class="skill__name">HTML / CSS / Tailwind</span>
+                                    <span class="skill__percent">95%</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__progress" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS ==================== -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="projects__header">
+                    <h2 class="section__title">Trabalhos Selecionados</h2>
+                    <a href="#" class="projects__view-all">
+                        Ver Todos os Projetos
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="projects__grid">
+                    <div class="project-card glass-card">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder">
+                                <img src="assets/project-dashboard.jpg" alt="Dashboard Financeiro" class="project-card__img">
+                            </div>
+                            <span class="project-card__tag">Full Stack</span>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Dashboard Financeiro</h3>
+                            <p class="project-card__desc">
+                                Um dashboard moderno para controle de finanças, 
+                                despesas, orçamentos e análise de dados.
+                            </p>
+                            <div class="project-card__footer">
+                                <div class="project-card__techs">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">Chart.js</span>
+                                </div>
+                                <a href="#" class="project-card__link" aria-label="Ver projeto">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder">
+                                <img src="assets/project-ecommerce.jpg" alt="E-commerce Premium" class="project-card__img">
+                            </div>
+                            <span class="project-card__tag">Full Stack</span>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">E-commerce Premium</h3>
+                            <p class="project-card__desc">
+                                Plataforma e-commerce rica em recursos com pagamentos 
+                                seguros e painel administrativo completo.
+                            </p>
+                            <div class="project-card__footer">
+                                <div class="project-card__techs">
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Stripe</span>
+                                </div>
+                                <a href="#" class="project-card__link" aria-label="Ver projeto">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder">
+                                <img src="assets/project-taskflow.jpg" alt="TaskFlow AI" class="project-card__img">
+                            </div>
+                            <span class="project-card__tag">Web App</span>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">TaskFlow AI</h3>
+                            <p class="project-card__desc">
+                                App de produtividade com IA para gerenciar tarefas, 
+                                prazos e colaboração em equipe.
+                            </p>
+                            <div class="project-card__footer">
+                                <div class="project-card__techs">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">OpenAI API</span>
+                                    <span class="tech-tag">Prisma</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                </div>
+                                <a href="#" class="project-card__link" aria-label="Ver projeto">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROCESS ==================== -->
+        <section class="process section" id="process">
+            <div class="container">
+                <h2 class="section__title section__title--center">Meu Processo de Trabalho</h2>
+
+                <div class="process__grid">
+                    <div class="process__step glass-card">
+                        <div class="process__icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="process__number">01</div>
+                        <h3 class="process__name">Descoberta</h3>
+                        <p class="process__desc">
+                            Entender objetivos, requisitos e escopo do projeto.
+                        </p>
+                    </div>
+
+                    <div class="process__connector">
+                        <svg viewBox="0 0 60 20" fill="none">
+                            <path d="M0 10 H50 L45 5 M50 10 L45 15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    <div class="process__step glass-card">
+                        <div class="process__icon">
+                            <i class="fa-solid fa-sitemap"></i>
+                        </div>
+                        <div class="process__number">02</div>
+                        <h3 class="process__name">Planejamento</h3>
+                        <p class="process__desc">
+                            Definir arquitetura, tech stack e roadmap do projeto.
+                        </p>
+                    </div>
+
+                    <div class="process__connector">
+                        <svg viewBox="0 0 60 20" fill="none">
+                            <path d="M0 10 H50 L45 5 M50 10 L45 15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    <div class="process__step glass-card">
+                        <div class="process__icon">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="process__number">03</div>
+                        <h3 class="process__name">Design</h3>
+                        <p class="process__desc">
+                            Criar wireframes e designs UI/UX elegantes e funcionais.
+                        </p>
+                    </div>
+
+                    <div class="process__connector">
+                        <svg viewBox="0 0 60 20" fill="none">
+                            <path d="M0 10 H50 L45 5 M50 10 L45 15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    <div class="process__step glass-card">
+                        <div class="process__icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="process__number">04</div>
+                        <h3 class="process__name">Desenvolvimento</h3>
+                        <p class="process__desc">
+                            Escrever código limpo, escalável e seguindo boas práticas.
+                        </p>
+                    </div>
+
+                    <div class="process__connector">
+                        <svg viewBox="0 0 60 20" fill="none">
+                            <path d="M0 10 H50 L45 5 M50 10 L45 15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    <div class="process__step glass-card">
+                        <div class="process__icon">
+                            <i class="fa-solid fa-bug"></i>
+                        </div>
+                        <div class="process__number">05</div>
+                        <h3 class="process__name">Testes</h3>
+                        <p class="process__desc">
+                            Testar bugs, performance e resolver problemas.
+                        </p>
+                    </div>
+
+                    <div class="process__connector">
+                        <svg viewBox="0 0 60 20" fill="none">
+                            <path d="M0 10 H50 L45 5 M50 10 L45 15" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                    <div class="process__step glass-card">
+                        <div class="process__icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <div class="process__number">06</div>
+                        <h3 class="process__name">Deploy</h3>
+                        <p class="process__desc">
+                            Publicar em produção garantindo um lançamento suave.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TESTIMONIALS & NUMBERS ==================== -->
+        <section class="social-proof section" id="testimonials">
+            <div class="container">
+                <div class="social-proof__grid">
+                    <div class="testimonials glass-card">
+                        <h2 class="section__title">O Que Clientes Dizem</h2>
+                        <div class="testimonial">
+                            <div class="testimonial__stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial__text">
+                                "Coder01 é um desenvolvedor excepcional! Entregou nosso 
+                                projeto no prazo com código limpo e atenção incrível aos 
+                                detalhes. Altamente recomendado!"
+                            </p>
+                            <div class="testimonial__author">
+                                <div class="testimonial__avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="testimonial__info">
+                                    <span class="testimonial__name">— Maria Silva</span>
+                                    <span class="testimonial__role">CEO, TechSolutions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="numbers glass-card">
+                        <h2 class="section__title">Em Números</h2>
+                        <div class="numbers__grid">
+                            <div class="number-item">
+                                <span class="number-item__value" data-target="20">0</span><span class="number-item__plus">+</span>
+                                <span class="number-item__label">Clientes Satisfeitos</span>
+                            </div>
+                            <div class="number-item">
+                                <span class="number-item__value" data-target="20">0</span><span class="number-item__plus">+</span>
+                                <span class="number-item__label">Projetos Concluídos</span>
+                            </div>
+                            <div class="number-item">
+                                <span class="number-item__value" data-target="4">0</span><span class="number-item__plus">+</span>
+                                <span class="number-item__label">Anos de Experiência</span>
+                            </div>
+                            <div class="number-item">
+                                <span class="number-item__value" data-target="99">0</span><span class="number-item__plus">%</span>
+                                <span class="number-item__label">Taxa de Satisfação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT ==================== -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact__wrapper glass-card">
+                    <div class="contact__info">
+                        <h2 class="section__title">Vamos Construir<br>Algo Incrível <span class="hero__title-gradient">Juntos</span></h2>
+                        <p class="contact__desc">
+                            Tem um projeto em mente ou quer colaborar? 
+                            Adoraria ouvir de você.
+                        </p>
+
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <span class="contact__detail-label">Email</span>
+                                    <span class="contact__detail-value">contato@coder01.dev</span>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <span class="contact__detail-label">Telefone</span>
+                                    <span class="contact__detail-value">+55 (11) 94875-3746</span>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <div>
+                                    <span class="contact__detail-label">WhatsApp</span>
+                                    <a href="https://api.whatsapp.com/send/?phone=5511948753746" target="_blank" rel="noopener noreferrer" class="contact__detail-value contact__detail-value--green">
+                                        +55 (11) 94875-3746
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <span class="contact__detail-label">Localização</span>
+                                    <span class="contact__detail-value">Brasil</span>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <span class="contact__detail-label">Disponibilidade</span>
+                                    <span class="contact__detail-value contact__detail-value--green">
+                                        <span class="status-dot"></span>
+                                        Aberto a novas oportunidades
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://api.whatsapp.com/send/?phone=5511948753746" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--sm">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Chamar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <a href="#" class="nav__logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Coder01</span>
+            </a>
+
+            <p class="footer__copy">
+                &copy; 2024 Coder01. Todos os direitos reservados.
+            </p>
+
+            <ul class="footer__links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+
+            <a href="#home" class="footer__scroll-top" aria-label="Voltar ao topo">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
